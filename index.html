@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <header>
+        <h1>FreeCodeCamp Survey Form</h1>
+        <p>Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <form action="" class="form">
+        <div class="form-group">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-input" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+            <label for="email" class="form-lable">Email</label>
+            <input type="email" class="form-input" placeholder="Enter your Email">
+        </div>
+        <div class="form-group">
+            <label for="age" class="form-lable">Age<span class="clue">(optional)</label>
+            <input type="number" class="form-input" min="10" max="99" placeholder="Enter your Age">
+        </div>
+        <div class="form-group">
+            <label for="option" class="form-lable">Which option best describes your current role?</label>
+            <select name="role" id="role" class="form-input">
+                <option disabled selected value>Select current role</option>
+                <option value="">Student</option>
+                <option value="">Full time job</option>
+                <option value="">Full time learner</option>
+                <option value="">Prefer not to stay</option>
+                <option value="">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <label>
+                <input type="radio" class="input-radio" value="definitely" name="user-recomend" checked>
+                definitely
+            </label>
+            <label>
+                <input type="radio" class="input-radio" value="maybe" name="user-recomend">
+                Maybe
+            </label>
+            <label>
+                <input type="radio" class="input-radio" value="notsure" name="user-recomend">
+                Not Sure
+            </label>
+        </div>
+        <div class="form-group">
+            <select name="" id="" class="form-input">
+                <option disabled selected value>Select Option</option>
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="open-source">Open Source</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label><input type="checkbox" name="prefer">Front-end Project</label>
+            <label><input type="checkbox" name="prefer">Back-end Project</label>
+            <label><input type="checkbox" name="prefer">Data Visualization</label>
+            <label><input type="checkbox" name="prefer">Challenges</label>
+            <label><input type="checkbox" name="prefer">Open source Community</label>
+            <label><input type="checkbox" name="prefer">Giter Help room</label>
+            <label><input type="checkbox" name="prefer">Videos</label>
+            <label><input type="checkbox" name="prefer">City Meetups</label>
+            <label><input type="checkbox" name="prefer">wiki</label>
+            <label><input type="checkbox" name="prefer">Forum</label>
+            <label><input type="checkbox" name="prefer">Additional Courses</label>
+        </div>
+        <div class="form-group">
+            <textarea name="comment" id="comment" class="form-input" rows="7"  placeholder="Enter your comment here..."></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="submit-btn">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
